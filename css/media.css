@@ -1,0 +1,178 @@
+@media(max-width: 1600px) {
+
+  .section__cards-descr,
+  .hotels__cards-descr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media(max-width: 1534px) {
+  .travel__cards-descr {
+    flex-wrap: wrap;
+  }
+
+  .card__right-content {
+    max-width: 100%;
+  }
+
+  .travel__card {
+    column-gap: 0;
+  }
+
+  .card__right-content {
+    width: 100%;
+  }
+}
+
+@media(max-width: 1220px) {
+  .form {
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 1100px) {
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__left,
+  .footer__center {
+    margin-bottom: 25px;
+  }
+}
+
+@media(max-width: 1039px) {
+  .nav__user {
+    display: none;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+  }
+
+  .header {
+    height: auto;
+    min-height: 500px;
+    border-radius: 0 0 40px 40px;
+  }
+
+  .container--header {
+    justify-content: flex-start;
+    row-gap: 90px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+
+  .nav__user {
+    display: block;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 992px) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about__left {
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .about__right {
+    text-align: center;
+  }
+
+  .footer-wrapper,
+  .footer__social-list {
+    justify-content: center;
+  }
+
+  .footer__logo {
+    text-align: center;
+  }
+}
+
+@media(max-width: 800px) {
+  .travel__card {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .travel__card-bottom {
+    margin-top: 50px;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .footer,
+  .activity,
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .about {
+    margin-bottom: 0;
+  }
+
+  .section__cards-descr,
+  .hotels__cards-descr {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .card+.card {
+    margin-top: 25px;
+  }
+
+  .card__footer {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .hotels,
+  .popular {
+    padding-top: 70px;
+  }
+
+  .title-1 {
+    font-size: 20px;
+  }
+
+  .subscribe__input {
+    width: 100%;
+  }
+
+  .subscribe__input::placeholder {
+    font-size: 12px;
+  }
+}
