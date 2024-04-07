@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile-nav.css">
+  <link rel="stylesheet" href="css/nav-icon.css">
+  <link rel="stylesheet" href="css/media.css">
+  <!-- libs styles -->
+
+  <link rel="stylesheet" href="libs/custom-select/custom-select.css">
+  <link rel="stylesheet" href="libs/autoComplete/css/autoComplete.01.css">
+  <title>2rism</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container--header">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="2rism logo">
+        </a>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link nav__item-link--active">home</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">hotels</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">restaurants</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">tours</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">destinations</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">activities</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__item-link">contact</a>
+          </li>
+        </ul>
+        <div class="nav__user">
+          <div class="user">
+            <div class="user-content">
+              <span class="user-greeting">Holla,</span>
+              <span class="user-name">Endri Griogryan</span>
+            </div>
+            <div class="user-avatar">
+              <img class="user-image" src="img/user-header.JPG" alt="User-Avatar">
+            </div>
+          </div>
+        </div>
+        <button class="mobile-nav-btn">
+          <div class="nav-icon"></div>
+        </button>
+      </nav>
+      <div class="header__content">
+        <h1 class="header__title">Discover the most engaging places</h1>
+        <button class="button button-huge">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM7.71 17.667C6.72341 15.5743 6.15187 13.3102 6.027 11H2.062C2.25659 12.5389 2.89392 13.9882 3.89657 15.1717C4.89922 16.3552 6.22401 17.2221 7.71 17.667ZM8.03 11C8.181 13.439 8.878 15.73 10 17.752C11.1523 15.6766 11.8254 13.3695 11.97 11H8.03ZM17.938 11H13.973C13.8481 13.3102 13.2766 15.5743 12.29 17.667C13.776 17.2221 15.1008 16.3552 16.1034 15.1717C17.1061 13.9882 17.7434 12.5389 17.938 11ZM2.062 9H6.027C6.15187 6.68979 6.72341 4.42569 7.71 2.333C6.22401 2.77788 4.89922 3.64475 3.89657 4.8283C2.89392 6.01184 2.25659 7.4611 2.062 9ZM8.031 9H11.969C11.8248 6.6306 11.152 4.32353 10 2.248C8.84768 4.32345 8.17456 6.63052 8.03 9H8.031ZM12.29 2.333C13.2766 4.42569 13.8481 6.68979 13.973 9H17.938C17.7434 7.4611 17.1061 6.01184 16.1034 4.8283C15.1008 3.64475 13.776 2.77788 12.29 2.333Z"
+              fill="white" />
+          </svg>
+          Discover on 3D Globe
+        </button>
+      </div>
+      <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <div class="form__input-wrapper form__input--location">
+          <label for="location" class="form__label">location</label>
+          <input type="text" class="form__input" id="location" placeholder="Explore nearby destinations">
+        </div>
+        <div class="form__input-wrapper form__input--activity">
+          <label for="activity" class="form__label">activity</label>
+          <select class="form__select" name="activity" id="select">
+            <option value="All Activities">All Activities</option>
+            <option value="Nature">Nature</option>
+            <option value="Sport">Sport</option>
+            <option value="Extreme">Extreme</option>
+          </select>
+        </div>
+        <div class="form__input-wrapper form__input--date">
+          <label for="date" class="form__label">when</label>
+          <input type="text" class="form__input" id="date" placeholder="Choose a Date">
+        </div>
+        <div class="form__input-wrapper form__input--guests">
+          <label for="guests" class="form__label">guests</label>
+          <select class="form__select" name="guests" id="guests">
+            <option value="1 guest">1 guest</option>
+            <option value="2 guests">2 guests</option>
+            <option value="3 guests">3 guests</option>
+            <option value="4 guests">4 guests</option>
+            <option value="4 guests">5 & more guests</option>
+          </select>
+        </div>
+        <button class="button button-search">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_25603_104)">
+              <path
+                d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_25603_104">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+  <div class="mobile-nav-fade"></div>
+  <div class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="#" class="active">home</a></li>
+      <li><a href="#">hotels</a></li>
+      <li><a href="#">restaurants</a></li>
+      <li><a href="#">tours</a></li>
+      <li><a href="#">destinations</a></li>
+      <li><a href="#">activities</a></li>
+      <li><a href="#">contact</a></li>
+    </ul>
+  </div>
+  <main class="main">
+    <section class="popular">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="title-1">Popular Destinations</h2>
+        </div>
+        <div class="section__cards section__cards-descr">
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-1.png" alt="California, USA">
+            <h3 class="card__title">Big Sur</h3>
+            <a href="#" class="card__location">California, USA</a>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-2.png" alt="Arizona, USA">
+            <h3 class="card__title">Prescott</h3>
+            <a href="#" class="card__location">Arizona, USA</a>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-3.png" alt="Florida, USA">
+            <h3 class="card__title">Fort Mayers</h3>
+            <a href="#" class="card__location">Florida, USA</a>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-4.png" alt="Arizona, USA">
+            <h3 class="card__title">Tucson</h3>
+            <a href="#" class="card__location">Arizona, USA</a>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-5.png" alt="Michigan, USAA">
+            <h3 class="card__title">St. Joseph</h3>
+            <a href="#" class="card__location">Michigan, USAA</a>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/popular-6.png" alt="Spain">
+            <h3 class="card__title">Madrid</h3>
+            <a href="#" class="card__location">Spain</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="hotels">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="title-1">Hotels and Restaurants</h2>
+          <a href="#" class="button-more">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_25603_595)">
+                <path
+                  d="M13.4767 9.16664L9.00671 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00671 15.3033L13.4767 10.8333H3.33337V9.16664H13.4767Z"
+                  fill="#5243C2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_25603_595">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            View all</a>
+        </div>
+        <div class="hotels__cards hotels__cards-descr">
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/hotels-1.png" alt="Salerno, Italy">
+            <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
+            <div class="card__footer">
+              <a href="#" class="card__location card__location--icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_25603_538)">
+                    <path
+                      d="M8 13.9334L11.3 10.6334C11.9526 9.98078 12.397 9.14926 12.577 8.24403C12.7571 7.33879 12.6646 6.40051 12.3114 5.54781C11.9582 4.69512 11.36 3.96632 10.5926 3.45356C9.82519 2.9408 8.92296 2.66711 8 2.66711C7.07704 2.66711 6.17481 2.9408 5.40739 3.45356C4.63997 3.96632 4.04183 4.69512 3.68861 5.54781C3.33539 6.40051 3.24294 7.33879 3.42297 8.24403C3.603 9.14926 4.04741 9.98078 4.7 10.6334L8 13.9334ZM8 15.8188L3.75734 11.5761C2.91823 10.737 2.34679 9.66789 2.11529 8.50401C1.88378 7.34013 2.0026 6.13373 2.45673 5.03738C2.91086 3.94103 3.6799 3.00396 4.66659 2.34467C5.65328 1.68539 6.81332 1.3335 8 1.3335C9.18669 1.3335 10.3467 1.68539 11.3334 2.34467C12.3201 3.00396 13.0891 3.94103 13.5433 5.03738C13.9974 6.13373 14.1162 7.34013 13.8847 8.50401C13.6532 9.66789 13.0818 10.737 12.2427 11.5761L8 15.8188ZM8 8.66678C8.35362 8.66678 8.69276 8.5263 8.94281 8.27625C9.19286 8.0262 9.33334 7.68707 9.33334 7.33344C9.33334 6.97982 9.19286 6.64068 8.94281 6.39064C8.69276 6.14059 8.35362 6.00011 8 6.00011C7.64638 6.00011 7.30724 6.14059 7.05719 6.39064C6.80715 6.64068 6.66667 6.97982 6.66667 7.33344C6.66667 7.68707 6.80715 8.0262 7.05719 8.27625C7.30724 8.5263 7.64638 8.66678 8 8.66678ZM8 10.0001C7.29276 10.0001 6.61448 9.71916 6.11438 9.21906C5.61429 8.71896 5.33334 8.04069 5.33334 7.33344C5.33334 6.6262 5.61429 5.94792 6.11438 5.44783C6.61448 4.94773 7.29276 4.66678 8 4.66678C8.70725 4.66678 9.38552 4.94773 9.88562 5.44783C10.3857 5.94792 10.6667 6.6262 10.6667 7.33344C10.6667 8.04069 10.3857 8.71896 9.88562 9.21906C9.38552 9.71916 8.70725 10.0001 8 10.0001Z"
+                      fill="#979797" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_25603_538">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Salerno, Italy
+              </a>
+              <div class="card__rating">
+                <img src="img/star-fill.svg" alt="Rating 5 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 5 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 5 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 5 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 5 of 5 stars">
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/hotels-2.png" alt="Lake Como, Italy">
+            <h3 class="card__title">Grand Hotel Tremezzo</h3>
+            <div class="card__footer">
+              <a href="#" class="card__location card__location--icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_25603_538)">
+                    <path
+                      d="M8 13.9334L11.3 10.6334C11.9526 9.98078 12.397 9.14926 12.577 8.24403C12.7571 7.33879 12.6646 6.40051 12.3114 5.54781C11.9582 4.69512 11.36 3.96632 10.5926 3.45356C9.82519 2.9408 8.92296 2.66711 8 2.66711C7.07704 2.66711 6.17481 2.9408 5.40739 3.45356C4.63997 3.96632 4.04183 4.69512 3.68861 5.54781C3.33539 6.40051 3.24294 7.33879 3.42297 8.24403C3.603 9.14926 4.04741 9.98078 4.7 10.6334L8 13.9334ZM8 15.8188L3.75734 11.5761C2.91823 10.737 2.34679 9.66789 2.11529 8.50401C1.88378 7.34013 2.0026 6.13373 2.45673 5.03738C2.91086 3.94103 3.6799 3.00396 4.66659 2.34467C5.65328 1.68539 6.81332 1.3335 8 1.3335C9.18669 1.3335 10.3467 1.68539 11.3334 2.34467C12.3201 3.00396 13.0891 3.94103 13.5433 5.03738C13.9974 6.13373 14.1162 7.34013 13.8847 8.50401C13.6532 9.66789 13.0818 10.737 12.2427 11.5761L8 15.8188ZM8 8.66678C8.35362 8.66678 8.69276 8.5263 8.94281 8.27625C9.19286 8.0262 9.33334 7.68707 9.33334 7.33344C9.33334 6.97982 9.19286 6.64068 8.94281 6.39064C8.69276 6.14059 8.35362 6.00011 8 6.00011C7.64638 6.00011 7.30724 6.14059 7.05719 6.39064C6.80715 6.64068 6.66667 6.97982 6.66667 7.33344C6.66667 7.68707 6.80715 8.0262 7.05719 8.27625C7.30724 8.5263 7.64638 8.66678 8 8.66678ZM8 10.0001C7.29276 10.0001 6.61448 9.71916 6.11438 9.21906C5.61429 8.71896 5.33334 8.04069 5.33334 7.33344C5.33334 6.6262 5.61429 5.94792 6.11438 5.44783C6.61448 4.94773 7.29276 4.66678 8 4.66678C8.70725 4.66678 9.38552 4.94773 9.88562 5.44783C10.3857 5.94792 10.6667 6.6262 10.6667 7.33344C10.6667 8.04069 10.3857 8.71896 9.88562 9.21906C9.38552 9.71916 8.70725 10.0001 8 10.0001Z"
+                      fill="#979797" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_25603_538">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Lake Como, Italy
+              </a>
+              <div class="card__rating">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-line.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-line.svg" alt="Rating 3 of 5 stars">
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/hotels-3.png" alt="Udaipur, India">
+            <h3 class="card__title">The Oberoi Udaivilas, Udaipur</h3>
+            <div class="card__footer">
+              <a href="#" class="card__location card__location--icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_25603_538)">
+                    <path
+                      d="M8 13.9334L11.3 10.6334C11.9526 9.98078 12.397 9.14926 12.577 8.24403C12.7571 7.33879 12.6646 6.40051 12.3114 5.54781C11.9582 4.69512 11.36 3.96632 10.5926 3.45356C9.82519 2.9408 8.92296 2.66711 8 2.66711C7.07704 2.66711 6.17481 2.9408 5.40739 3.45356C4.63997 3.96632 4.04183 4.69512 3.68861 5.54781C3.33539 6.40051 3.24294 7.33879 3.42297 8.24403C3.603 9.14926 4.04741 9.98078 4.7 10.6334L8 13.9334ZM8 15.8188L3.75734 11.5761C2.91823 10.737 2.34679 9.66789 2.11529 8.50401C1.88378 7.34013 2.0026 6.13373 2.45673 5.03738C2.91086 3.94103 3.6799 3.00396 4.66659 2.34467C5.65328 1.68539 6.81332 1.3335 8 1.3335C9.18669 1.3335 10.3467 1.68539 11.3334 2.34467C12.3201 3.00396 13.0891 3.94103 13.5433 5.03738C13.9974 6.13373 14.1162 7.34013 13.8847 8.50401C13.6532 9.66789 13.0818 10.737 12.2427 11.5761L8 15.8188ZM8 8.66678C8.35362 8.66678 8.69276 8.5263 8.94281 8.27625C9.19286 8.0262 9.33334 7.68707 9.33334 7.33344C9.33334 6.97982 9.19286 6.64068 8.94281 6.39064C8.69276 6.14059 8.35362 6.00011 8 6.00011C7.64638 6.00011 7.30724 6.14059 7.05719 6.39064C6.80715 6.64068 6.66667 6.97982 6.66667 7.33344C6.66667 7.68707 6.80715 8.0262 7.05719 8.27625C7.30724 8.5263 7.64638 8.66678 8 8.66678ZM8 10.0001C7.29276 10.0001 6.61448 9.71916 6.11438 9.21906C5.61429 8.71896 5.33334 8.04069 5.33334 7.33344C5.33334 6.6262 5.61429 5.94792 6.11438 5.44783C6.61448 4.94773 7.29276 4.66678 8 4.66678C8.70725 4.66678 9.38552 4.94773 9.88562 5.44783C10.3857 5.94792 10.6667 6.6262 10.6667 7.33344C10.6667 8.04069 10.3857 8.71896 9.88562 9.21906C9.38552 9.71916 8.70725 10.0001 8 10.0001Z"
+                      fill="#979797" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_25603_538">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Udaipur, India
+              </a>
+              <div class="card__rating">
+                <img src="img/star-fill.svg" alt="Rating 4 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 4 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 4 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 4 of 5 stars">
+                <img src="img/star-line.svg" alt="Rating 4 of 5 stars">
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/hotels-4.png" alt="Los Angeles, United States">
+            <h3 class="card__title">AKA Beverly Hills</h3>
+            <div class="card__footer">
+              <a href="#" class="card__location card__location--icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_25603_538)">
+                    <path
+                      d="M8 13.9334L11.3 10.6334C11.9526 9.98078 12.397 9.14926 12.577 8.24403C12.7571 7.33879 12.6646 6.40051 12.3114 5.54781C11.9582 4.69512 11.36 3.96632 10.5926 3.45356C9.82519 2.9408 8.92296 2.66711 8 2.66711C7.07704 2.66711 6.17481 2.9408 5.40739 3.45356C4.63997 3.96632 4.04183 4.69512 3.68861 5.54781C3.33539 6.40051 3.24294 7.33879 3.42297 8.24403C3.603 9.14926 4.04741 9.98078 4.7 10.6334L8 13.9334ZM8 15.8188L3.75734 11.5761C2.91823 10.737 2.34679 9.66789 2.11529 8.50401C1.88378 7.34013 2.0026 6.13373 2.45673 5.03738C2.91086 3.94103 3.6799 3.00396 4.66659 2.34467C5.65328 1.68539 6.81332 1.3335 8 1.3335C9.18669 1.3335 10.3467 1.68539 11.3334 2.34467C12.3201 3.00396 13.0891 3.94103 13.5433 5.03738C13.9974 6.13373 14.1162 7.34013 13.8847 8.50401C13.6532 9.66789 13.0818 10.737 12.2427 11.5761L8 15.8188ZM8 8.66678C8.35362 8.66678 8.69276 8.5263 8.94281 8.27625C9.19286 8.0262 9.33334 7.68707 9.33334 7.33344C9.33334 6.97982 9.19286 6.64068 8.94281 6.39064C8.69276 6.14059 8.35362 6.00011 8 6.00011C7.64638 6.00011 7.30724 6.14059 7.05719 6.39064C6.80715 6.64068 6.66667 6.97982 6.66667 7.33344C6.66667 7.68707 6.80715 8.0262 7.05719 8.27625C7.30724 8.5263 7.64638 8.66678 8 8.66678ZM8 10.0001C7.29276 10.0001 6.61448 9.71916 6.11438 9.21906C5.61429 8.71896 5.33334 8.04069 5.33334 7.33344C5.33334 6.6262 5.61429 5.94792 6.11438 5.44783C6.61448 4.94773 7.29276 4.66678 8 4.66678C8.70725 4.66678 9.38552 4.94773 9.88562 5.44783C10.3857 5.94792 10.6667 6.6262 10.6667 7.33344C10.6667 8.04069 10.3857 8.71896 9.88562 9.21906C9.38552 9.71916 8.70725 10.0001 8 10.0001Z"
+                      fill="#979797" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_25603_538">
+                      <rect width="16" height="16" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Los Angeles, United States
+              </a>
+              <div class="card__rating">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-fill.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-line.svg" alt="Rating 3 of 5 stars">
+                <img src="img/star-line.svg" alt="Rating 3 of 5 stars">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="travels">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="title-1">Travel Tips and Advice</h2>
+          <a href="#" class="button-more">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_25603_595)">
+                <path
+                  d="M13.4767 9.16664L9.00671 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00671 15.3033L13.4767 10.8333H3.33337V9.16664H13.4767Z"
+                  fill="#5243C2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_25603_595">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            View all</a>
+        </div>
+        <div class="hotels__cards travel__cards-descr">
+          <article class="card travel__card">
+            <div class="card__left-content">
+              <img class="travel__card-img card__img" src="img/travel-1.png" alt="East Village Ice Cream Crawl">
+            </div>
+            <div class="card__right-content">
+              <h3 class="travel__card-title card__title">East Village Ice Cream Crawl</h3>
+              <p class="travel__card-text">
+                We will stop at five different world-class ice cream shops on this 1.5 mile 1.5 hour tour. At each ice
+                cream store we'll explore the story behind the business and see what makes the ice cream unique as you
+                savor every…
+              </p>
+              <div class="travel__card-bottom">
+                <a href="#" class="travel__card-link travel__card-link--date">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_494)">
+                      <path
+                        d="M11.3333 2.66659H14C14.1768 2.66659 14.3464 2.73682 14.4714 2.86185C14.5964 2.98687 14.6666 3.15644 14.6666 3.33325V13.9999C14.6666 14.1767 14.5964 14.3463 14.4714 14.4713C14.3464 14.5963 14.1768 14.6666 14 14.6666H1.99998C1.82317 14.6666 1.6536 14.5963 1.52858 14.4713C1.40355 14.3463 1.33331 14.1767 1.33331 13.9999V3.33325C1.33331 3.15644 1.40355 2.98687 1.52858 2.86185C1.6536 2.73682 1.82317 2.66659 1.99998 2.66659H4.66665V1.33325H5.99998V2.66659H9.99998V1.33325H11.3333V2.66659ZM13.3333 7.99992H2.66665V13.3333H13.3333V7.99992ZM9.99998 3.99992H5.99998V5.33325H4.66665V3.99992H2.66665V6.66659H13.3333V3.99992H11.3333V5.33325H9.99998V3.99992ZM3.99998 9.33325H5.33331V10.6666H3.99998V9.33325ZM7.33331 9.33325H8.66665V10.6666H7.33331V9.33325ZM10.6666 9.33325H12V10.6666H10.6666V9.33325Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_494">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Today
+                </a>
+                <a href="#" class="travel__card-link travel__card-link--author">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_500)">
+                      <path
+                        d="M2.66669 14.6667C2.66669 13.2523 3.22859 11.8957 4.22878 10.8955C5.22898 9.89532 6.58553 9.33342 8.00002 9.33342C9.41451 9.33342 10.7711 9.89532 11.7713 10.8955C12.7715 11.8957 13.3334 13.2523 13.3334 14.6667H12C12 13.6059 11.5786 12.5885 10.8284 11.8383C10.0783 11.0882 9.06089 10.6667 8.00002 10.6667C6.93915 10.6667 5.92174 11.0882 5.17159 11.8383C4.42145 12.5885 4.00002 13.6059 4.00002 14.6667H2.66669ZM8.00002 8.66675C5.79002 8.66675 4.00002 6.87675 4.00002 4.66675C4.00002 2.45675 5.79002 0.666748 8.00002 0.666748C10.21 0.666748 12 2.45675 12 4.66675C12 6.87675 10.21 8.66675 8.00002 8.66675ZM8.00002 7.33342C9.47335 7.33342 10.6667 6.14008 10.6667 4.66675C10.6667 3.19341 9.47335 2.00008 8.00002 2.00008C6.52669 2.00008 5.33335 3.19341 5.33335 4.66675C5.33335 6.14008 6.52669 7.33342 8.00002 7.33342Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_500">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Maria Philips
+                </a>
+                <a href="#" class="travel__card-link travel__card-link--comments">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_506)">
+                      <path
+                        d="M4.86065 13.8826L1.33332 14.6666L2.11732 11.1393C1.60101 10.1735 1.33167 9.09502 1.33332 7.99992C1.33332 4.31792 4.31799 1.33325 7.99999 1.33325C11.682 1.33325 14.6667 4.31792 14.6667 7.99992C14.6667 11.6819 11.682 14.6666 7.99999 14.6666C6.90489 14.6682 5.8264 14.3989 4.86065 13.8826ZM5.05399 12.4739L5.48932 12.7073C6.26169 13.12 7.12425 13.3351 7.99999 13.3333C9.05482 13.3333 10.086 13.0205 10.963 12.4344C11.8401 11.8484 12.5237 11.0154 12.9273 10.0409C13.331 9.06636 13.4366 7.994 13.2308 6.95944C13.0251 5.92487 12.5171 4.97456 11.7712 4.22868C11.0253 3.4828 10.075 2.97485 9.04047 2.76906C8.0059 2.56328 6.93355 2.66889 5.95901 3.07256C4.98447 3.47623 4.15152 4.15982 3.56548 5.03688C2.97945 5.91394 2.66665 6.94509 2.66665 7.99992C2.66665 8.88925 2.88332 9.74525 3.29332 10.5106L3.52599 10.9459L3.08932 12.9106L5.05399 12.4739Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_506">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  2</a>
+              </div>
+            </div>
+          </article>
+          <article class="card travel__card">
+            <div class="card__left-content">
+              <img class="travel__card-img card__img" src="img/travel-2.png" alt="Brooklyn Bridge cinematic photo walk">
+            </div>
+            <div class="card__right-content">
+              <h3 class="travel__card-title card__title">Brooklyn Bridge cinematic photo walk</h3>
+              <p class="travel__card-text">
+                This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m always open to
+                capture clients at different locations upon request for an additional charge.
+              </p>
+              <div class="travel__card-bottom">
+                <a href="#" class="travel__card-link travel__card-link--date">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_494)">
+                      <path
+                        d="M11.3333 2.66659H14C14.1768 2.66659 14.3464 2.73682 14.4714 2.86185C14.5964 2.98687 14.6666 3.15644 14.6666 3.33325V13.9999C14.6666 14.1767 14.5964 14.3463 14.4714 14.4713C14.3464 14.5963 14.1768 14.6666 14 14.6666H1.99998C1.82317 14.6666 1.6536 14.5963 1.52858 14.4713C1.40355 14.3463 1.33331 14.1767 1.33331 13.9999V3.33325C1.33331 3.15644 1.40355 2.98687 1.52858 2.86185C1.6536 2.73682 1.82317 2.66659 1.99998 2.66659H4.66665V1.33325H5.99998V2.66659H9.99998V1.33325H11.3333V2.66659ZM13.3333 7.99992H2.66665V13.3333H13.3333V7.99992ZM9.99998 3.99992H5.99998V5.33325H4.66665V3.99992H2.66665V6.66659H13.3333V3.99992H11.3333V5.33325H9.99998V3.99992ZM3.99998 9.33325H5.33331V10.6666H3.99998V9.33325ZM7.33331 9.33325H8.66665V10.6666H7.33331V9.33325ZM10.6666 9.33325H12V10.6666H10.6666V9.33325Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_494">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Today
+                </a>
+                <a href="#" class="travel__card-link travel__card-link--author">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_500)">
+                      <path
+                        d="M2.66669 14.6667C2.66669 13.2523 3.22859 11.8957 4.22878 10.8955C5.22898 9.89532 6.58553 9.33342 8.00002 9.33342C9.41451 9.33342 10.7711 9.89532 11.7713 10.8955C12.7715 11.8957 13.3334 13.2523 13.3334 14.6667H12C12 13.6059 11.5786 12.5885 10.8284 11.8383C10.0783 11.0882 9.06089 10.6667 8.00002 10.6667C6.93915 10.6667 5.92174 11.0882 5.17159 11.8383C4.42145 12.5885 4.00002 13.6059 4.00002 14.6667H2.66669ZM8.00002 8.66675C5.79002 8.66675 4.00002 6.87675 4.00002 4.66675C4.00002 2.45675 5.79002 0.666748 8.00002 0.666748C10.21 0.666748 12 2.45675 12 4.66675C12 6.87675 10.21 8.66675 8.00002 8.66675ZM8.00002 7.33342C9.47335 7.33342 10.6667 6.14008 10.6667 4.66675C10.6667 3.19341 9.47335 2.00008 8.00002 2.00008C6.52669 2.00008 5.33335 3.19341 5.33335 4.66675C5.33335 6.14008 6.52669 7.33342 8.00002 7.33342Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_500">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  James Calzoni
+                </a>
+                <a href="#" class="travel__card-link travel__card-link--comments">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_506)">
+                      <path
+                        d="M4.86065 13.8826L1.33332 14.6666L2.11732 11.1393C1.60101 10.1735 1.33167 9.09502 1.33332 7.99992C1.33332 4.31792 4.31799 1.33325 7.99999 1.33325C11.682 1.33325 14.6667 4.31792 14.6667 7.99992C14.6667 11.6819 11.682 14.6666 7.99999 14.6666C6.90489 14.6682 5.8264 14.3989 4.86065 13.8826ZM5.05399 12.4739L5.48932 12.7073C6.26169 13.12 7.12425 13.3351 7.99999 13.3333C9.05482 13.3333 10.086 13.0205 10.963 12.4344C11.8401 11.8484 12.5237 11.0154 12.9273 10.0409C13.331 9.06636 13.4366 7.994 13.2308 6.95944C13.0251 5.92487 12.5171 4.97456 11.7712 4.22868C11.0253 3.4828 10.075 2.97485 9.04047 2.76906C8.0059 2.56328 6.93355 2.66889 5.95901 3.07256C4.98447 3.47623 4.15152 4.15982 3.56548 5.03688C2.97945 5.91394 2.66665 6.94509 2.66665 7.99992C2.66665 8.88925 2.88332 9.74525 3.29332 10.5106L3.52599 10.9459L3.08932 12.9106L5.05399 12.4739Z"
+                        fill="#878787" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_506">
+                        <rect width="16" height="16" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  2</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="activity">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="title-1">Activities</h2>
+          <a href="#" class="button-more">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_25603_595)">
+                <path
+                  d="M13.4767 9.16664L9.00671 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00671 15.3033L13.4767 10.8333H3.33337V9.16664H13.4767Z"
+                  fill="#5243C2" />
+              </g>
+              <defs>
+                <clipPath id="clip0_25603_595">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            View all</a>
+        </div>
+        <div class="hotels__cards hotels__cards-descr">
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/activity-1.png" alt="Sailing">
+            <h3 class="card__title">Sailing</h3>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/activity-2.png" alt="Climbing">
+            <h3 class="card__title">Climbing</h3>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/activity-3.png" alt="Skiing">
+            <h3 class="card__title">Skiing</h3>
+          </article>
+          <article class="card">
+            <a href="#" class="card__link"></a>
+            <img class="card__img" src="img/activity-4.png" alt="Hiking">
+            <h3 class="card__title">Hiking</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__wrapper">
+          <div class="about__left">
+            <h3 class="about__title">About Us</h3>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo.
+              Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam porta consectetur
+              lorem sit amet ultrices. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+              himenaeos.
+            </p>
+            <a href="#" class="button-more about__link">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_25603_595)">
+                  <path
+                    d="M13.4767 9.16664L9.00671 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00671 15.3033L13.4767 10.8333H3.33337V9.16664H13.4767Z"
+                    fill="#5243C2" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_25603_595">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Read more</a>
+          </div>
+          <div class="about__right">
+            <img src="img/about.png" alt="People consillium" class="about__img">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer__left">
+          <a href="#" class="footer__logo">
+            <img src="img/footer-logo.svg" alt="2rism-logo">
+          </a>
+          <p class="footer__left-text">
+            We always make our customers happy by providing as many choises as possible
+          </p>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16 3.08252C8.63599 3.08252 2.66666 9.05185 2.66666 16.4159C2.66666 23.0705 7.54266 28.5865 13.9173 29.5879V20.2692H10.5307V16.4159H13.9173V13.4785C13.9173 10.1372 15.9067 8.29185 18.9533 8.29185C20.412 8.29185 21.9373 8.55185 21.9373 8.55185V11.8319H20.2573C18.6 11.8319 18.084 12.8599 18.084 13.9145V16.4159H21.7813L21.1907 20.2692H18.084V29.5879C24.4573 28.5879 29.3333 23.0692 29.3333 16.4159C29.3333 9.05185 23.364 3.08252 16 3.08252Z"
+                      fill="#5243C2" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_318)">
+                      <path
+                        d="M29.5493 7.95725C28.5314 8.40751 27.452 8.70322 26.3467 8.83458C27.5117 8.13783 28.3836 7.04127 28.8 5.74925C27.7067 6.39992 26.508 6.85592 25.2587 7.10258C24.4195 6.20469 23.3072 5.6092 22.0946 5.4087C20.8821 5.20819 19.6373 5.41391 18.5537 5.99386C17.4701 6.5738 16.6085 7.4955 16.1028 8.61564C15.5971 9.73579 15.4757 10.9916 15.7573 12.1879C13.5402 12.0768 11.3711 11.5006 9.39106 10.4968C7.411 9.49299 5.66418 8.08398 4.26401 6.36125C3.7684 7.21252 3.50795 8.18022 3.50934 9.16525C3.50934 11.0986 4.49334 12.8066 5.98934 13.8066C5.10402 13.7787 4.23819 13.5396 3.46401 13.1093V13.1786C3.46428 14.4662 3.90983 15.7141 4.72514 16.7107C5.54044 17.7073 6.67532 18.3912 7.93734 18.6466C7.1155 18.8693 6.25375 18.9021 5.41734 18.7426C5.77317 19.8509 6.46668 20.8202 7.4008 21.5147C8.33491 22.2093 9.46285 22.5943 10.6267 22.6159C9.46998 23.5244 8.14558 24.1959 6.72918 24.5921C5.31279 24.9884 3.83218 25.1016 2.37201 24.9253C4.92094 26.5645 7.88814 27.4347 10.9187 27.4319C21.176 27.4319 26.7853 18.9346 26.7853 11.5653C26.7853 11.3253 26.7787 11.0826 26.768 10.8453C27.8598 10.0561 28.8021 9.07861 29.5507 7.95858L29.5493 7.95725Z"
+                        fill="#5243C2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_318">
+                        <rect width="32" height="32" fill="white" transform="translate(0 0.416016)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_25603_322)">
+                      <path
+                        d="M16 3.08252C19.6227 3.08252 20.0747 3.09585 21.496 3.16252C22.916 3.22919 23.8827 3.45185 24.7333 3.78252C25.6133 4.12119 26.3547 4.57985 27.096 5.31985C27.774 5.98638 28.2986 6.79264 28.6333 7.68252C28.9627 8.53185 29.1867 9.49985 29.2533 10.9199C29.316 12.3412 29.3333 12.7932 29.3333 16.4159C29.3333 20.0385 29.32 20.4905 29.2533 21.9119C29.1867 23.3319 28.9627 24.2985 28.6333 25.1492C28.2996 26.0396 27.7748 26.846 27.096 27.5119C26.4293 28.1896 25.6231 28.7142 24.7333 29.0492C23.884 29.3785 22.916 29.6025 21.496 29.6692C20.0747 29.7319 19.6227 29.7492 16 29.7492C12.3773 29.7492 11.9253 29.7359 10.504 29.6692C9.08399 29.6025 8.11732 29.3785 7.26666 29.0492C6.37642 28.7152 5.57003 28.1904 4.90399 27.5119C4.22587 26.8454 3.70123 26.0391 3.36666 25.1492C3.03599 24.2999 2.81332 23.3319 2.74666 21.9119C2.68399 20.4905 2.66666 20.0385 2.66666 16.4159C2.66666 12.7932 2.67999 12.3412 2.74666 10.9199C2.81332 9.49852 3.03599 8.53319 3.36666 7.68252C3.7003 6.79209 4.22506 5.98561 4.90399 5.31985C5.57022 4.64149 6.37656 4.11683 7.26666 3.78252C8.11732 3.45185 9.08266 3.22919 10.504 3.16252C11.9253 3.09985 12.3773 3.08252 16 3.08252ZM16 9.74919C14.2319 9.74919 12.5362 10.4516 11.2859 11.7018C10.0357 12.9521 9.33332 14.6477 9.33332 16.4159C9.33332 18.184 10.0357 19.8797 11.2859 21.1299C12.5362 22.3801 14.2319 23.0825 16 23.0825C17.7681 23.0825 19.4638 22.3801 20.714 21.1299C21.9643 19.8797 22.6667 18.184 22.6667 16.4159C22.6667 14.6477 21.9643 12.9521 20.714 11.7018C19.4638 10.4516 17.7681 9.74919 16 9.74919ZM24.6667 9.41585C24.6667 8.97383 24.4911 8.5499 24.1785 8.23734C23.8659 7.92478 23.442 7.74919 23 7.74919C22.558 7.74919 22.134 7.92478 21.8215 8.23734C21.5089 8.5499 21.3333 8.97383 21.3333 9.41585C21.3333 9.85788 21.5089 10.2818 21.8215 10.5944C22.134 10.9069 22.558 11.0825 23 11.0825C23.442 11.0825 23.8659 10.9069 24.1785 10.5944C24.4911 10.2818 24.6667 9.85788 24.6667 9.41585ZM16 12.4159C17.0609 12.4159 18.0783 12.8373 18.8284 13.5874C19.5786 14.3376 20 15.355 20 16.4159C20 17.4767 19.5786 18.4941 18.8284 19.2443C18.0783 19.9944 17.0609 20.4159 16 20.4159C14.9391 20.4159 13.9217 19.9944 13.1716 19.2443C12.4214 18.4941 12 17.4767 12 16.4159C12 15.355 12.4214 14.3376 13.1716 13.5874C13.9217 12.8373 14.9391 12.4159 16 12.4159Z"
+                        fill="#5243C2" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25603_322">
+                        <rect width="32" height="32" fill="white" transform="translate(0 0.416016)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__center">
+          <ul class="footer__center-list">
+            <h3 class="footer__center-title">About</h3>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">About Us</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Features</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">News</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Menu</a>
+            </li>
+          </ul>
+          <ul class="footer__center-list">
+            <h3 class="footer__center-title">Company</h3>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Why 2rism</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Partner With Us</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">FAQ</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Blog</a>
+            </li>
+          </ul>
+          <ul class="footer__center-list">
+            <h3 class="footer__center-title">Support</h3>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Account</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Support Center</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Feedback</a>
+            </li>
+            <li class="footer__center-item">
+              <a href="#" class="footer__center-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <p class="footer__right-descr">
+            Subscribe on our destination review newsletters
+          </p>
+          <form class="subscribe">
+            <div class="subscribe__input-wrapper">
+              <input type="email" class="subscribe__input" placeholder="johndoe@gmail.com" required>
+              <label class="subscribe__label">Your Email</label>
+              <button class="button button__subscribe">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 13H4V11H12V4L20 12L12 20V13Z" fill="white" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- scripts & libs -->
+  <script src="libs/custom-select/custom-select.min.js"></script>
+  <script src="libs/autoComplete/autoComplete.min.js"></script>
+  <script src="libs/easepick/easepick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.umd.min.js"></script>
+  <script defer src="js/input-dest.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+
+</html>
